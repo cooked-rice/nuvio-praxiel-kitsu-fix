@@ -2,7 +2,6 @@
   "name": "Eclipsia",
   "version": "9.9.0",
   "scrapers": [
-    
     {
       "id": "praxiel",
       "name": "Praxiel.",
@@ -23,7 +22,6 @@
         "en",
         "ja"
       ]
-    },
-
-      ]
     }
+  ]
+}
