@@ -382,7 +382,7 @@ async function getStreams(tmdbId, mediaType, season, episode) {
         // while anime sources number it continuously. Match the selected TMDB
         // episode to Kitsu's episode record by air date/title, then use Kitsu's
         // canonical number. No season-length or fixed-offset arithmetic is used.
-        if (mediaType === "tv" && !requestedAnimeId && kitsuId) {
+        if (mediaType === "tv" && kitsuId) {
             const tmdbEpisode = await fetchTmdbEpisode(tmdbId, season, episode);
             const mappedEpisode = await resolveAbsoluteEpisode(kitsuId, tmdbEpisode, season, episode);
             if (mappedEpisode) episodeNum = mappedEpisode;
